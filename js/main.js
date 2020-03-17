@@ -24,18 +24,18 @@ $(document).ready(function() {
 
     function cambiaColore(that, numRandom) {
         if (numRandom <= 5) {
-            $(that).removeClass('giallo');
-            $(that).removeClass('verde');
-            $(that).addClass('giallo');
+            that.removeClass('giallo');
+            that.removeClass('verde');
+            that.addClass('giallo');
         } else if (numRandom > 5) {
-            $(that).removeClass('giallo');
-            $(that).removeClass('verde');
-            $(that).addClass('verde');
+            that.removeClass('giallo');
+            that.removeClass('verde');
+            that.addClass('verde');
         }
     }
 
     function scriviNumero(that, numRandom) {
-        $(that).find('p').text(numRandom);
+        that.find('p').text(numRandom);
     }
 
 });
